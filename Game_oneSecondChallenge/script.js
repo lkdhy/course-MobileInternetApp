@@ -1,12 +1,14 @@
-var t1 = 1, t2 = -1, t3 = -1;
-var time = 0;
+// the shortest, the second & the third shortest time interval respectively
+var t1, t2, t3;
+var time; // "time = 0" stands for not having given the first click
 
 const best = document.getElementById("bestscore");
 const second = document.getElementById("secondscore");
 const third = document.getElementById("thirdscore");
-let prompt = document.getElementById("prompt");
-let feedback = document.getElementById("feedback");
+const prompt = document.getElementById("prompt");
+const feedback = document.getElementById("feedback");
 
+// called when the game first starts & after the player fails
 function init()
 {
    t1 = t2 = t3 = -1;
@@ -36,9 +38,11 @@ function updateScore(s) {
         t3 = t2; t2 = t1; t1 = s;
     }
     else if (s > t2) {
+        feedback.innerText = "Excellent!";
         t3 = t2; t2 = s;
     }
     else if (s > t3) {
+        feedback.innerText = "Good job.";
         t3 = s;
     }
     else {
@@ -49,11 +53,12 @@ function updateScore(s) {
 function myclick() {
     let myDate = new Date();
     let ntime = Number(myDate.getTime());
-    // console.log(ntime);
-    // console.log('in fun click');
     if (time > 0) {
         let score = ntime - time;
+        /* the player fails once the interval between clicks reach 1 second,
+            ending this round of game immediately */
         if (score >= 1000) {
+            // prompt.innerText =  "Hahahaha";
             alert("You failed!!!");
             console.log(t1 < 0 ? "Never succeed" : t1);
             init();
