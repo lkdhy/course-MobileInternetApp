@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    font-family: "Fira Code";
+    color: #F5F001;
+}
+#pic_area {
+    height: 550px;
+    padding: 10px;
+}
+#pic {
+    position: relative;
+    top: 30%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#control_area {
+    text-align: center;
+}
+button {
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+}
