@@ -15,7 +15,7 @@
    9b3ab10732d7ad59/2ba3a78d-4d89-4799-b52b-0e156927a969.jpg">
   ```
 
-  > 已经 `404 Not Found`，自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png：
+  > 已经 `404 Not Found`，自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png
 
   <img src="https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png" style="zoom: 90%">
 
