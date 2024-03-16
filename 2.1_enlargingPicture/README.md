@@ -11,13 +11,12 @@
 - 一幅图
 
   ```javascript
-   <img src = "https://www.fudan.edu.cn/_upload/article/images/e7/b4/0af263754b3b
-   9b3ab10732d7ad59/2ba3a78d-4d89-4799-b52b-0e156927a969.jpg">
+   <img src = "https://www.fudan.edu.cn/_upload/article/images/e7/b4/0af263754b3b9b3ab10732d7ad59/2ba3a78d-4d89-4799-b52b-0e156927a969.jpg">
   ```
-
-  > 上链接已经 `404 Not Found`，因而自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png：
-
-  <img src="https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png" style="zoom: 90%">
+  
+> 上链接已经 `404 Not Found`，因而自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png：
+  
+<img src="https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png" style="zoom: 90%">
 
 #### 功能要求
 
@@ -34,7 +33,7 @@ var timer = setInterval(function() { …}, 100); //100毫秒调用一次
 clearInterval(timer); //停止定时器
 ```
 
-* 可以再一个会变色的 “Hello World!” 文本
+* 可以再增加一个会变色的 “Hello World!” 文本
 
 ### 作业成果
 
