@@ -1,1 +1,2 @@
-# course-MobileInternetApp
+# 课程 “移动互联网” 课堂练习
+
