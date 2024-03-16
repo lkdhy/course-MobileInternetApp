@@ -33,3 +33,13 @@
 var timer = setInterval(function() { …}, 100); //100毫秒调用一次
 clearInterval(timer); //停止定时器
 ```
+
+### 作业成果
+
+#### 初始界面
+
+<img src=".\effect_1.PNG" alt="effect_1" style="zoom: 40%;" />
+
+#### 点击按键
+
+<img src=".\effect_2.PNG" alt="effect_2" style="zoom: 40%;" />
