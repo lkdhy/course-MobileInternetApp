@@ -4,7 +4,7 @@
 
 ### 写一个小网页
 
-#### 界面
+#### 界面要求
 
 - 一个按钮
 
@@ -15,11 +15,11 @@
    9b3ab10732d7ad59/2ba3a78d-4d89-4799-b52b-0e156927a969.jpg">
   ```
 
-  > 已经 `404 Not Found`，自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png
+  > 上链接已经 `404 Not Found`，因而自己改用 https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png：
 
   <img src="https://cs.fudan.edu.cn/_upload/site/02/41/577/logo.png" style="zoom: 90%">
 
-#### 功能
+#### 功能要求
 
 - 点击按键，图慢慢变大
 
@@ -34,12 +34,20 @@ var timer = setInterval(function() { …}, 100); //100毫秒调用一次
 clearInterval(timer); //停止定时器
 ```
 
+* 可以再一个会变色的 “Hello World!” 文本
+
 ### 作业成果
 
 #### 初始界面
 
 <img src=".\effect_1.PNG" alt="effect_1" style="zoom: 40%;" />
 
-#### 点击按键
+#### 点击放大按键
 
 <img src=".\effect_2.PNG" alt="effect_2" style="zoom: 40%;" />
+
+* 放大过程中该按键被禁用
+
+  > 实现方法：设置按键的 disabled 属性为 "disabled"
+
+* 任意时刻可点击 “`Reset`” 进行复位
