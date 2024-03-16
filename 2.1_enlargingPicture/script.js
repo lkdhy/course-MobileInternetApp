@@ -1,4 +1,5 @@
 const pic = document.getElementById("pic");
+const enlarge_btn = document.getElementById("enlarge_btn");
 let k = 10;
 // Option 1: x = x0 + k(t - t0)
 // Option 2: ...?
@@ -36,14 +37,15 @@ function enlarging() {
 function resetPic() {
     clearInterval(enlarge_interval_id);
     pic.width = x0;
-    document.getElementById("enlarge_btn").innerText =
-        btn_text_ori;
+    enlarge_btn.innerText = btn_text_ori;
+    enlarge_btn.disabled = "";
 }
 
 function onclickEnlarge() {
     document.getElementById("p2").style.color =
         "#2932F5";
     enlarging();
+    enlarge_btn.disabled = "disabled";
 }
 function onclickReset() {
     resetPic();
