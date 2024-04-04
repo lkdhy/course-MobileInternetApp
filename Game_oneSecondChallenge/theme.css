@@ -1,9 +1,74 @@
+.Video-game-gaming-controller-night-with-lights-dark-background-top-view-1-hex
+{ color: #2932F5; }
+.Video-game-gaming-controller-night-with-lights-dark-background-top-view-2-hex
+{ color: #6F00A8; }
+.Video-game-gaming-controller-night-with-lights-dark-background-top-view-3-hex
+{ color: #013075; }
+.Video-game-gaming-controller-night-with-lights-dark-background-top-view-4-hex
+{ color: #011526; }
+.Video-game-gaming-controller-night-with-lights-dark-background-top-view-5-hex
+{ color: #F5F001; }
+body {
+    background-color: #011526;
+}
 h1 {
     font-size: 50px;
 }
 h1, h2, h3, h4, p {
     text-align: center;
+    /*word-spacing: 10px;*/
 }
 div {
     margin: 2px;
 }
+#titlearea {
+    padding: 5px;
+}
+#title {
+    color: #D9A441;
+    font-family: "Impact";
+    font-size: 70px;
+    word-spacing: 10px;
+    margin: 0px;
+}
+#scorearea {
+    border: 3px solid;
+    margin: 10px;
+    width: 1000px;
+    background: #6F00A8;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    /*opacity: 30%;*/
+    /*background: darkorange;*/
+}
+#bestscore, #secondscore, #thirdscore {
+    font-family: "Courier New";
+    color: #F5F001;
+}
+#bestscore {
+    font-size: 40px;
+    font-family: "Courier New";
+}
+#clickarea {
+    background: lightgray;
+    padding: 30px;
+    /*height: 170px;*/
+    left: 50%;
+}
+#feedback {
+    color: #3671BF;
+    font-family: 'Comic Sans MS'
+}
+#prompt {
+    font-size: 70px;
+    font-family: "MS UI Gothic";
+}
+/* Color Theme Swatches in Hex */
+.Harajuku-1-hex { color: #F26BAA; }
+.Harajuku-2-hex { color: #373B8C; }
+.Harajuku-3-hex { color: #3671BF; }
+.Harajuku-4-hex { color: #D9A441; }
+.Harajuku-5-hex { color: #BF5B45; }
+/* Color Theme Swatches in Hex *
