@@ -4,68 +4,16 @@
     <meta charset="UTF-8">
     <title>flying image</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="write_images.js"></script>
-    <script>
-        // $(document).ready(() => {
-        let img_h, img_w, zoom = 1;
-        $(document).ready(function() {
-            let img = $('#img1');
-            // let img2 = document.getElementById("img16");
-            // console.log(img.attr('src'));
-            // console.log(img);
-            // console.log(img.id());
-            img_h = img.height() * zoom;
-            img_w = img.width() * zoom;
-            // console.log('img_h: ' + img_h);
-            // console.log('img_w: ' + img_w);
-            for (let i = 1; i <= 16; ++i) {
-                let sel = '#img' + i;
-                // $(sel).click(() => { ... }); seems to be wrong!?
-                $(sel).click(function() {
-                    // console.log($(this).attr("src"));
-                    $('#target').attr('src', $(this).attr('src'));
-                    flyToCenter($(this).offset().top, $(this).offset().left);
-                });
-                // $(sel).hover(() => {alert('hover');});
-            }
-            let flyingImg = $('#flyingImg');
-            flyingImg.click(function() {
-                flyingImg.fadeOut(1000);
-            });
-        });
-
-        function flyToCenter(top, left) {
-            let _windowHeight = $('#entireimg').height();
-            let _windowWidth = $('#entireimg').width();
-            // console.log('top, left:' + top, left);
-            // console.log('entireimg: ' + _windowHeight, _windowWidth);
-            let zoom2 = 2.4;
-            let to_top = (_windowHeight - img_h * zoom2) / 2;
-            let to_left = (_windowWidth - img_w * zoom2) / 2;
-            // console.log('to_top: ' + to_top, to_left);
-            let flyingImg = $('#flyingImg');
-            flyingImg.css({
-                'position': 'absolute',
-                's-index': 1003,
-                'left': left, 'top': top,
-                'width': img_w, 'height':img_h,
-                'display': 'block'
-            });
-            flyingImg.stop(true, false);
-            flyingImg.animate({
-                'left': to_left + 'px',
-                'top': to_top + 'px',
-                'width': img_w * zoom2,
-                'height': img_h * zoom2
-            }, 'slow');
-        }
-    </script>
+    <script src="./write_images.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--    <img src="./test_1.jpg">-->
-<div id="flyingImg">
-    <img id="target" src=""/>
-</div>
+<!--    <h1>飞扬的图片</h1>-->
+    <div id="flyingImg">
+        <img id="target" src=""/>
+    </div>
 </body>
 </html>
