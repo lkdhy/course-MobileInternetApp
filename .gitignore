@@ -1,6 +1,6 @@
 #.gitignore
-*.pdf
-.idea/
+#*.pdf
+#.idea/
 *.zip
-*.md
+#*.md
 JQuery_test/
