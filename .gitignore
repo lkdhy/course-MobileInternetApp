@@ -4,3 +4,7 @@
 *.zip
 *.md
 JQuery_test/
+Preparation/
+*/node_modules
+*/package.json
+*/package-lock.json

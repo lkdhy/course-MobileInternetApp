@@ -6,38 +6,25 @@
 <!--    <script src="node_modules/vue/dist/vue.js"></script>-->
 <!--    <script src="./node_modules/vue/dist/vue.global.js"></script>-->
     <script src="https://cdn.bootcss.com/vue/2.6.12/vue.min.js"></script>
-    <style>
-        #app {
-            margin: 100px;
-            font-size: 50px;
-            font-family: "Times New Roman";
-        }
-        input {
-            text-align: center;
-            height: 50px;
-            position: relative;
-            left: 500px;
-        }
-        .header {
-            border: 5px black solid;
-            margin: 100px;
-            text-align: center;
-            width: 30%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="theme.css">
 </head>
 <body>
     <div id="app">
         <p v-if="isShown">{{ msg }}</p>
         <input type="text" v-model="msg">
     </div>
-    <section class="header" v-show="isShown">
+    <section id='header' class="header" v-show="isShown">
         <header>
-            <h1 v-if="x > y">{{ title_A }}</h1>
+            <h1 v-if="parseInt(x) > parseInt(y)">{{ title_A }}</h1>
             <h1 v-else>{{ title_B }}</h1>
-            <h2 v-if="x > y">{{ title_B }}</h2>
-            <h2 v-else-if="x !== y">{{ title_A }}</h2>
+            <h2 v-if="parseInt(x) > parseInt(y)">{{ title_B }}</h2>
+            <h2 v-else-if="parseInt(x) !== parseInt(y)">{{ title_A }}</h2>
         </header>
+    </section>
+    <section id="input_num">
+        <input type="number" name='quantity' min="30" max="40" v-model="x">
+        <input type="number" name='quantity' v-model="y">
+        <p>{{ x }}, {{ y }}</p>
     </section>
 </body>
 <script>
@@ -52,12 +39,16 @@
     var titleData = {
         title_A: "Apple",
         title_B: "Banana",
-        x: 30, y: 40,
-        isShown: false
+        x: undefined, y: undefined,
+        isShown: true
     };
     new Vue({
-        el: 'section',
+        el: '#header',
         data: titleData
-    });
+    })
+    new Vue({
+        el: '#input_num',
+        data: titleData
+    })
 </script>
 </html>
