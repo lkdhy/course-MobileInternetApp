@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue3.x 框架</title>
+</head>
+<body>
+<div id="app">
+    <button @click="count++">
+        {{ count }}
+    </button>
+</div>
+</body>
+<script type="module">
+    import { createApp } from "";
+    const app = createApp({
+        data() {
+            return {
+                count: 0
+            }
+        }
+    });
+    app.mount('#app');
+</script>
+</html>
