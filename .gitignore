@@ -1,5 +1,6 @@
 #.gitignore
 *.pdf
+*docx
 .idea/
 *.zip
 *.md
