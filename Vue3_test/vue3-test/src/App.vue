@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Count from "@/components/Count.vue";
+import UserInput from "@/components/UserInput.vue";
 </script>
 
 <template>
@@ -10,13 +12,31 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
 <!--      <HelloWorld msg="You did it!" />-->
-      <HelloWorld msg="Haha! You did it!" />
+      <HelloWorld msg="小白在学习 Vue www"></HelloWorld>
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <div>
+      <h1>友情链接</h1>
+      <a href="https://fudan.edu.cn"
+        target="_blank" rel="noopener">复旦大学</a>
+      <br>
+      <a href="https://cs.fudan.edu.cn"
+        target="_blank" rel="noopener">复旦大学计算机科学技术学院</a>
+    </div>
+    <hr>
+    <div>
+      <Count></Count>
+    </div>
+    <hr>
+    <div>
+      <UserInput></UserInput>
+    </div>
   </main>
+<!--  <main>-->
+<!--    <TheWelcome />-->
+<!--  </main>-->
 </template>
 
 <style scoped>
