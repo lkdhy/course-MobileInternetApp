@@ -28,8 +28,11 @@
   h1 {
     font-family: "Times New Roman";
   }
+  button {
+    font-family: Consolas;
+  }
   button, a {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 </style>

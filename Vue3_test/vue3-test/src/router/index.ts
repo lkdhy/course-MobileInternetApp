@@ -1,16 +1,20 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// import Test from "@/pages/Test.vue";
-// import Index from '@/pages/Index.vue';
-// import Login from "@/pages/Login.vue";
+import counter from "@/pages/counter.vue";
+import userinput from "@/pages/userinput.vue";
+import index from "@/pages/index.vue";
 
 const routes =
     [
         {
-            path: '/test',
-            name: 'Test',
-            // component: Test
+            path: '/', name: 'Index', component: index
         },
+        {
+            path: '/counter', name: 'Counter', component: counter
+        },
+        {
+            path: '/userinput', name: 'UserInput', component: userinput
+        }
     ];
 
 const router = createRouter({
